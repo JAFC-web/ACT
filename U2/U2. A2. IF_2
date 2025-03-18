@@ -1,0 +1,31 @@
+Algoritmo mayor_menor
+	Definir nu1, nu2 Como Entero
+	
+	//ingreso
+	Escribir "Ingresa el primer numero:"
+	Leer nu1
+	Escribir "Ingresar el segundo numero:"
+	Leer nu2
+	
+	//Proceso 
+	si nu1>nu2 Entonces
+		Mostrar "El numero mayor es:" nu1
+		Mostrar "El numero menor es:" nu2
+	SiNo
+		si nu1<nu2 Entonces
+			Mostrar "El numero mayor es:" nu2
+			Mostrar "El numero menor es:" nu1
+	FinSi
+FinSi
+
+FinAlgoritmo
+----------------------------------------------------
+
+*** Ejecución Iniciada. ***
+Ingresa el primer numero:
+> 4
+Ingresar el segundo numero:
+> 3
+El numero mayor es:4
+El numero menor es:3
+*** Ejecución Finalizada. ***

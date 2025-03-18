@@ -1,0 +1,65 @@
+Algoritmo Promedio_Alumnos
+	//Definiciones :v
+	definir nombre como cadena
+	definir edad Como Entero
+	definir notaexamen como entero
+	definir notatareas como entero
+	definir notatrabajo como entero
+	definir notaprromedio como entero
+	
+	//ingreso de datos
+	Escribir "Ingresar Nombre:"
+	Leer nombre
+	Escribir "Ingresar Edad:"
+	Leer edad
+	
+	//ingreso del de promedio
+	Escribir "Nota Examen(30%):"
+	leer notaexamen 
+	Escribir "Nota Tareas(20%):"
+	leer notatareas
+	Escribir "Nota Trabajos (50%):"
+	leer notatrabajo
+	
+	//calculacion de promedio
+	promediofinal= ((notaexamen*0.30)+(notatareas*0.20)+(notatrabajo*0.50))
+	
+	
+	//aprobacion o no :v 
+	aprobo= promediofinal>= 6
+	
+	//Escribir el promedio :)
+	Escribir "Nombre:", nombre
+	Escribir "Edad:", edad
+	Escribir "Calificacion De Nota Examen(30%):", notaexamen
+	Escribir "Calificacion De Nota Tareas(20%):", notatareas
+	Escribir "Calificacion De Nota Trabajos (50%):", notatrabajo
+	escribir "Promedio Final:", promediofinal
+	Escribir "¿Aprobo o No?:",aprobo
+	
+FinAlgoritmo
+
+
+------------------------------------------------------------------------------
+
+*** Ejecución Iniciada. ***
+Ingresar Nombre:
+> JAFC
+Ingresar Edad:
+> 18
+Nota Examen(30%):
+> 10
+Nota Tareas(20%):
+> 10
+Nota Trabajos (50%):
+> 8
+Nombre:JAFC
+Edad:18
+Calificacion De Nota Examen(30%):10
+Calificacion De Nota Tareas(20%):10
+Calificacion De Nota Trabajos (50%):8
+
+
+
+
+

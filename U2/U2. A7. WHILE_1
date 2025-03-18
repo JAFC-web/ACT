@@ -1,0 +1,63 @@
+Proceso empresa
+	
+    Escribir "Introduce la contraseña:"
+    Leer contraseña
+	
+    Mientras contraseña <> "A17ad3" Hacer
+        Escribir "Debe llamar al supervisor:"
+        Leer contraseña
+    FinMientras
+	
+	Mostrar "//////////////////////////////////////////////"
+	Mostrar "///             Bienvenida                 ///"
+	Mostrar "//////////////////////////////////////////////"
+	
+	suma <- 0
+	
+    Escribir "añade las piezas fabricadas (0000 para salir):"
+    Leer num
+	
+    Mientras num <> 0000 Hacer
+        piezas <- piezas + num
+        Escribir "cuantas piezas quiere añadir (0000 para salir):"
+        Leer num
+    FinMientras
+	Mostrar "----------------------------------------------------"
+    Mostrar  "La suma total de las piezas es: ", piezas
+	Mostrar "----------------------------------------------------"
+	
+	si piezas> 10000 Entonces
+		Mostrar "//////////////////////////////////////////////"
+		Mostrar "///       se ha cumplido la meta           ///"
+		Mostrar "//////////////////////////////////////////////"
+	SiNo
+		Mostrar "//////////////////////////////////////////////"
+		Mostrar "///       alerta para producción           ///"
+		Mostrar "//////////////////////////////////////////////"
+		
+	FinSi
+	
+FinProceso
+-------------------------------------------------------------------
+*** Ejecución Iniciada. ***
+Introduce la contraseña:
+> A17ad3
+//////////////////////////////////////////////
+///             Bienvenida                 ///
+//////////////////////////////////////////////
+añade las piezas fabricadas (0000 para salir):
+> 2000
+cuantas piezas quiere añadir (0000 para salir):
+> 3000
+cuantas piezas quiere añadir (0000 para salir):
+> 400
+cuantas piezas quiere añadir (0000 para salir):
+> 0000
+----------------------------------------------------
+La suma total de las piezas es: 5400
+----------------------------------------------------
+//////////////////////////////////////////////
+///       alerta para producción           ///
+//////////////////////////////////////////////
+*** Ejecución Finalizada. ***
+

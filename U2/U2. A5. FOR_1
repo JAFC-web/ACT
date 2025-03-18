@@ -1,0 +1,64 @@
+Algoritmo  primaria_v2
+	Escribir "ingrese el nombre del alumno:"
+	leer nomb
+	Escribir "¿Cuantas materias se van a evaluar?"
+	Leer m
+	Escribir "Ingresa la materia:"
+    Para i <- 1 Hasta m Hacer
+        Escribir "materia ", i, ": "
+        Leer materia
+        Escribir "Has agregado: ", materia
+		Escribir "Ingresa su calificacion"
+		Leer calificacion
+		total = calificacion + total
+    FinPara
+	
+	resultado=total/m
+	si resultado<6 Entonces
+		Mostrar "-----------------------------------------"
+		Mostrar "Nombre del alumno:" nomb
+		Mostrar "Promedio Final:" resultado
+		Mostrar " necesita recursamiento"
+		Mostrar "-----------------------------------------"
+	FinSi
+	si resultado>6 y resultado<9 Entonces
+		
+		Mostrar "-----------------------------------------"
+		Mostrar "Nombre del alumno:" nomb
+		Mostrar "Promedio Final:" resultado
+		Mostrar "aprobó"
+		Mostrar "-----------------------------------------"
+	FinSi
+	si resultado=10 Entonces
+		Mostrar "-----------------------------------------"
+		Mostrar "Nombre del alumno:" nomb
+		Mostrar "Promedio Final:" resultado
+		Mostrar "alumno destacado"
+		Mostrar "-----------------------------------------"
+	FinSi
+	
+FinAlgoritmo
+
+----------------------------------------------------------------------------
+*** Ejecución Iniciada. ***
+ingrese el nombre del alumno:
+> jafc
+¿Cuantas materias se van a evaluar?
+> 2
+Ingresa la materia:
+materia 1:
+> español
+Has agregado: español
+Ingresa su calificacion
+> 10
+materia 2:
+> ingles
+Has agregado: ingles
+Ingresa su calificacion
+> 10
+-----------------------------------------
+Nombre del alumno:jafc
+Promedio Final:10
+alumno destacado
+-----------------------------------------
+*** Ejecución Finalizada. ***

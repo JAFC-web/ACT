@@ -1,0 +1,153 @@
+Algoritmo terrorismo
+	Escribir "Introduce la contraseña:"
+    Leer contraseña
+	
+    Mientras contraseña <> "20060412" Hacer
+        Escribir "Contraseña incorrecta. Inténtalo de nuevo:"
+        Leer contraseña
+    FinMientras
+	
+	Mostrar  "/////////////////////////////////////////////"
+    Escribir "///     Bienvenido Señor Terrorista       ///"
+	Mostrar  "/////////////////////////////////////////////"
+	
+	Mostrar "seleccione el numero de acuerdo a su respuesta"
+	Escribir "¿Quiere hacer un registro de mas explosivos(1) o de verduras(2)?"
+	leer respuesta
+	si respuesta =1 Entonces
+		Mostrar "Ya deje el terrorismo carnal"
+	FinSi
+	
+	si respuesta=2 Entonces
+		Mostrar "--------------------------------------------------"
+		Mostrar "¿Que registro desea ingresar?"
+		Escribir "Zanahoria(1) o Tomates(2)"
+		Leer respuesta
+		Mostrar "--------------------------------------------------"
+	FinSi
+	
+	si respuesta=1 Entonces
+		mostrar "cuantas cajas de Zanahorias desea ingresar"
+		Leer numcaj
+		Mientras  pescaj<>100001 Hacer
+			Escribir "Ingrese el peso de la caja" "en kilos: (Finaliza con 100001)"
+			Leer pescaj
+			pesototal= pesototal+pescaj
+		FinMientras
+		
+		costototal= pesototal*15.84
+		preciokilo= 15.84
+	FinSi
+	
+	si respuesta=2 Entonces
+		mostrar "cuantas cajas de Tomates desea ingresar"
+		Leer numcaj
+		
+		Mientras  pescaj<> 100001 Hacer
+			Escribir "Ingrese el peso de la caja" "en kilos: (Finaliza con 100001)"
+			Leer pescaj
+			pesototal= pesototal+pescaj
+		FinMientras
+		
+		costototal= pesototal*11.34
+		preciokilo= 11.34
+	FinSi
+	
+	si respuesta=1 Entonces
+		Mostrar "-------------------------------------------------------------"
+		Mostrar "Resumen de venta:"
+		Mostrar "Producto seleccionado: Zanahoria"
+		Mostrar "Numero de cajas agregadas:" numcaj
+		Mostrar "Peso total de las cajas:" pesototal "K"
+		Mostrar "Costo por kilo:" preciokilo
+		Mostrar "Costo Total:" costototal
+		Mostrar "-------------------------------------------------------------"
+	FinSi
+	
+	si respuesta=2 Entonces
+		Mostrar "-------------------------------------------------------------"
+		Mostrar "Resumen de venta:"
+		Mostrar "Producto seleccionado: Tomates"
+		Mostrar "Numero de cajas agregadas:" numcaj
+		Mostrar "Peso total de las cajas:" pesototal "K"
+		Mostrar "Costo por kilo:" preciokilo
+		Mostrar "Costo Total:" costototal
+		Mostrar "-------------------------------------------------------------"
+	FinSi
+	
+	si costototal> 10000 Entonces
+		costototal= costototal*0.75
+		Mostrar "-------------------------------------------------------------"
+		Mostrar "Se aplico un descuento de 75%"
+		Mostrar "ahora el precio es de:" costototal
+		Mostrar "-------------------------------------------------------------"
+	FinSi
+	Escribir "¿esecita envio? escriba si(1) o no(2)"
+	leer envio
+	
+	si envio =1 Entonces
+		costototal= costototal+150
+		Mostrar "-------------------------------------------------------------"
+		Mostrar "Presio del envio: 150"
+		Mostrar "presio total con envio:" costototal
+		Mostrar "-------------------------------------------------------------"
+	SiNo
+		Mostrar "-------------------------------------------------------------"
+		Mostrar "precio final sin envio:" costototal
+		Mostrar "-------------------------------------------------------------"
+		FinSi
+FinAlgoritmo
+
+-----------------------------------------------------------------------------
+
+*** Ejecución Iniciada. ***
+Introduce la contraseña:
+> 12042006
+Contraseña incorrecta. Inténtalo de nuevo:
+> 20060412
+/////////////////////////////////////////////
+///     Bienvenido Señor Terrorista       ///
+/////////////////////////////////////////////
+seleccione el numero de acuerdo a su respuesta
+¿Quiere hacer un registro de mas explosivos(1) o de verduras(2)?
+> 2
+--------------------------------------------------
+¿Que registro desea ingresar?
+Zanahoria(1) o Tomates(2)
+> 1
+--------------------------------------------------
+cuantas cajas de Zanahorias desea ingresar
+> 3
+Ingrese el peso de la cajaen kilos: (Finaliza con 100001)
+> 50
+Ingrese el peso de la cajaen kilos: (Finaliza con 100001)
+> 56
+Ingrese el peso de la cajaen kilos: (Finaliza con 100001)
+> 100001
+-------------------------------------------------------------
+Resumen de venta:
+Producto seleccionado: Zanahoria
+Numero de cajas agregadas:3
+Peso total de las cajas:100107K
+Costo por kilo:15.84
+Costo Total:1585694.8799999999
+-------------------------------------------------------------
+-------------------------------------------------------------
+Se aplico un descuento de 75%
+ahora el precio es de:1189271.1599999999
+-------------------------------------------------------------
+¿esecita envio? escriba si(1) o no(2)
+> 1
+-------------------------------------------------------------
+Presio del envio: 150
+presio total con envio:1189421.1599999999
+-------------------------------------------------------------
+*** Ejecución Finalizada. ***
+
+
+
+
+
+
+
+

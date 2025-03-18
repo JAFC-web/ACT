@@ -1,0 +1,70 @@
+Algoritmo otorgar_credito
+	//definiciones 
+	definir edad como entero
+	definir ingreso Como Entero
+	definir Años_trabajados Como Entero
+	definir saldo Como Real
+	//ingreso de datos
+	Escribir "Ingrese Su Edad:"
+	Leer edad
+	Escribir "Ingrese Su Ingreso Mensual"
+	Leer ingreso
+	Escribir "Ingrese Los Años Trabajados"
+	Leer Años_trabajados
+	Escribir "Ingrese Su Saldo De Banco"
+	Leer saldo
+	Escribir "El Prestamo Es Para Una Cuention Medica si(1)- No(0)"
+	Leer si_no
+	
+	//aprobación o denegacion
+	Edad1= 18<=edad
+	ingreso1= 4000<=ingreso
+	trabajo= 2<=Años_trabajados
+	saldo1= 10000<=saldo
+	aprobado_S= 1= si_no
+	denegado_N= 0= si_no
+	
+	si Años_trabajados<2
+		Mostrar "Su credito fue rechasado, no cumple con los requisitos minimos"
+	FinSi
+	si edad<18
+	 Mostrar "Su credito fue rechasado, no cumple con los requisitos minimos"
+ FinSi
+	si aprobado_S
+		Mostrar "Su Credito Fue Aceptado"
+	FinSi
+	si saldo1
+		Mostrar "Su Credito Fue Aceptado"
+	FinSi
+	si (aprobado_S=Verdadero) o (saldo1=Falso)
+	si (edad>18) o (Años_trabajados>2) 
+	si denegado_N
+		prestamo= (ingreso*.15)*12
+		Mostrar "Su Edad Es valida?" Edad1
+		Mostrar "Su ingreso Es valido?" ingreso1
+		Mostrar "Sus Años Trabajado Es Valido?" trabajo
+		Mostrar "Su Prestamo Seria De:" prestamo
+	FinSi
+FinSi
+FinSi
+
+FinAlgoritmo
+
+
+------------------------------------------------------------------------------------
+
+*** Ejecución Iniciada. ***
+Ingrese Su Edad:
+> 18
+Ingrese Su Ingreso Mensual
+> 40000
+Ingrese Los Años Trabajados
+> 4
+Ingrese Su Saldo De Banco
+> 200000
+El Prestamo Es Para Una Cuention Medica si(1)- No(0)
+> 0
+Su Credito Fue Aceptado
+*** Ejecución Finalizada. ***
+
+

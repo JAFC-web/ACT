@@ -1,0 +1,78 @@
+Algoritmo ControlVentas
+	
+	Definir numVendedores, i, j Como Entero
+	Definir ventaTotal, ventaVendedor, ventaMasAlta Como Real
+	Definir numVentas Como Entero
+	Definir totalGlobalVentas Como Real
+	
+	totalGlobalVentas <- 0
+	
+	Escribir "Ingrese el número de vendedores a registrar:"
+	Leer numVendedores
+	
+	Para i <- 1 Hasta numVendedores Con Paso 1 Hacer
+		ventaTotal <- 0
+		ventaMasAlta <- 0
+		numVentas <- 0
+		
+		Escribir "Vendedor ", i, ": Ingrese el número de ventas realizadas:"
+		Leer numVentas
+		
+		Para j <- 1 Hasta numVentas Con Paso 1 Hacer
+			Escribir "Vendedor ", i, " - Ingrese el valor de la venta ", j, ":"
+			Leer ventaVendedor
+			
+			ventaTotal <- ventaTotal + ventaVendedor
+			
+			Si ventaVendedor > ventaMasAlta Entonces
+				ventaMasAlta <- ventaVendedor
+			FinSi
+		FinPara
+		
+		Escribir "Vendedor ", i, ":"
+		Mostrar "Total de ventas:", ventaTotal
+		Mostrar  "Número de ventas: ", numVentas
+		Mostrar  "Venta más alta:", ventaMasAlta
+		Mostrar "-------------------------------------------------------------"
+		
+		Si ventaMasAlta < 100 O ventaTotal < 1500 Entonces
+			Mostrar  "Pase a Recursos Humanos"
+		FinSi
+		
+		totalGlobalVentas <- totalGlobalVentas + ventaTotal
+	FinPara
+	
+	Mostrar  "REPORTE GLOBAL:"
+	Mostrar  "Número de vendedores registrados: ", numVendedores
+	Mostrar  "Total de ventas de la empresa:", totalGlobalVentas
+	
+	// verificar
+	Si totalGlobalVentas > 20000 Entonces
+		Mostrar  "Se alcanzó la meta de ventas."
+	Sino
+		Mostrar  "Se necesita convocar una reunión."
+	FinSi
+FinAlgoritmo
+
+--------------------------------------------------------------------------------
+*** Ejecución Iniciada. ***
+Ingrese el número de vendedores a registrar:
+> 2
+Vendedor 1: Ingrese el número de ventas realizadas:
+> 3
+Vendedor 1 - Ingrese el valor de la venta 1:
+> 4
+Vendedor 1 - Ingrese el valor de la venta 2:
+> 4
+Vendedor 1 - Ingrese el valor de la venta 3:
+> 4
+Vendedor 1:
+Total de ventas:12
+Número de ventas: 3
+Venta más alta:4
+-------------------------------------------------------------
+Pase a Recursos Humanos
+Vendedor 2: Ingrese el número de ventas realizadas:
+> 4
+
+

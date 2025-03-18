@@ -1,0 +1,50 @@
+Algoritmo conversor_de_unidades
+	
+	Escribir "Ingrese valor de bytes:"
+	Leer bytes
+	
+	si bytes >= 1024 Entonces
+		unidad= "KB"
+		b=bytes/1024
+		si bytes >= 1048576 Entonces
+			unidad= "MB"
+			b=bytes/2^20
+			si bytes>=2^30 Entonces
+				unidad="GB"
+				b=bytes/2^30
+				si bytes>=2^40 Entonces
+					unidad="TB"
+					b=bytes/2^40
+					si bytes>=2^50 Entonces
+						unidad= "PB"
+						
+						b=bytes/2/50
+						si bytes>= 2^60 Entonces
+							unidad= "EB"
+							b= bytes/2^60
+							si bytes>=2^70 Entonces
+								unidad= "ZB"
+								b=bytes/2^70
+								si bytes>=2^80 Entonces
+									unidad= "YB"
+								FinSi
+								
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	Mostrar "la cantidad equivalente es: " b," ",unidad
+    
+FinAlgoritmo
+------------------------------------------------------------------------
+
+*** Ejecución Iniciada. ***
+Ingrese valor de bytes:
+> 50000
+la cantidad equivalente es: 48.828125 KB
+*** Ejecución Finalizada. ***
+

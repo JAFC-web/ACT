@@ -1,0 +1,122 @@
+Algoritmo Numero_mayor
+    Escribir "Venta vendedor 1:"
+    Leer num1
+    Escribir "Venta vendedor 2:"
+    Leer num2
+    Escribir "Venta vendedor 3:"
+    Leer num3
+    Escribir "Venta vendedor 4:"
+    Leer num4
+    
+    // salvar los valores originales 
+    o1 <- num1
+    o2 <- num2
+    o3 <- num3
+    o4 <- num4
+	
+    // Ordenar
+    Si num1 > num2 Entonces
+        temp <- num1
+        num1 <- num2
+        num2 <- temp
+    FinSi
+    
+    Si num2 > num3 Entonces
+        temp <- num2
+        num2 <- num3
+        num3 <- temp
+    FinSi
+    
+    Si num3 > num4 Entonces
+        temp <- num3
+        num3 <- num4
+        num4 <- temp
+    FinSi
+    
+    Si num1 > num2 Entonces
+        temp <- num1
+        num1 <- num2
+        num2 <- temp
+    FinSi
+    
+    Si num2 > num3 Entonces
+        temp<- num2
+        num2 <- num3
+        num3 <- temp
+    FinSi
+    
+    Si num1 > num2 Entonces
+        temp<- num1
+        num1<- num2
+        num2 <- temp
+    FinSi
+    
+    // Resultados
+	Mostrar  "-----------------------------------------------------------"
+	
+    Mostrar "resultado:"
+    
+	Mostrar "Ventas originales:"
+    Mostrar "num1:", o1
+    Mostrar "num2:", o2
+    Mostrar "num3:", o3
+	Mostrar "num4:", o4
+	
+    Mostrar  "-----------------------------------------------------------"
+	
+    Mostrar "ventas ordenadas:"
+    Mostrar "menor:", num1
+    Mostrar "segundo:", num2
+	Mostrar "tercero:", num3
+    Mostrar "mayor:", num4
+    
+    Mostrar  "-----------------------------------------------------------"
+    Mostrar "mayor - menor:", num4 - num1
+    Mostrar "segundo - menor:", num2 - num1
+    Mostrar "mayor - tercero:", num4 - num3
+	Mostrar "tercero - segundo:", num3 - num2
+    
+	Mostrar  "-----------------------------------------------------------"
+	//calculo
+    suma <- o1 + o2 + o3 + o4
+    prom <- suma / 4
+    
+	//mostrar nuevamente
+    Mostrar  "suma total:", suma
+	Mostrar "promedio:", prom
+FinAlgoritmo
+
+----------------------------------------------------------------------------------
+
+*** Ejecución Iniciada. ***
+Venta vendedor 1:
+> 30
+Venta vendedor 2:
+> 24
+Venta vendedor 3:
+> 46
+Venta vendedor 4:
+> 43
+-----------------------------------------------------------
+resultado:
+Ventas originales:
+num1:30
+num2:24
+num3:46
+num4:43
+-----------------------------------------------------------
+ventas ordenadas:
+menor:24
+segundo:30
+tercero:43
+mayor:46
+-----------------------------------------------------------
+mayor - menor:22
+segundo - menor:6
+mayor - tercero:3
+tercero - segundo:13
+-----------------------------------------------------------
+suma total:143
+promedio:35.75
+*** Ejecución Finalizada. ***
+

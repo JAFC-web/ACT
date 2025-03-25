@@ -1,0 +1,162 @@
+SubProceso calculocb
+	Mostrar "====Calculo de un Cubo==="
+	Escribir "Ingresa la longitud del lado del cubo:"
+	Leer lado
+	area= lado*lado
+	volumen= lado*lado*lado
+	Mostrar "----------------------------------------"
+	Mostrar "AREA:" area
+	Mostrar "VOLUMEN:"	volumen
+	Mostrar "----------------------------------------"
+	
+	Escribir "¿Desea repétir este proceso? si(1)---no(2)"
+	Leer t
+	//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	si t=1 Entonces
+		area=0
+		volumen=0
+		r=0
+		a=0
+		lado=0
+		
+		Mostrar "===CALCULAR UNA FIGURA GEOMETRICA==="
+		Mostrar "////////////////////////////////////////////////////////////"
+		Mostrar "///                      Cubo (1)                        ///"
+		Mostrar "///                     Esfera (2)                       ///"
+		Mostrar "///                    Cilindro (3)                      ///"
+		Mostrar "////////////////////////////////////////////////////////////"
+		Escribir  "¿Que desea calcular?"
+		Leer rs
+		//----------------------------------------------------------------------
+		Si rs=1 Entonces
+			calculocb
+		FinSi
+		
+		Si rs=2 Entonces
+			calculosfe
+		FinSi
+		
+		Si rs=3 Entonces
+			calculocd
+		FinSi
+	FinSi
+FinSubProceso
+//------------------------------------------------------------------------
+SubProceso calculosfe 
+	Mostrar "===Calculo de una Esfera==="
+	Escribir "Escribe la radio de la  Esfera:"
+	Leer r
+	area= 4*3.14166 * (r*r)
+	volumen=(4/3)*3.1416 * (r^3)
+	
+	Mostrar "----------------------------------------"
+	Mostrar "AREA:" area
+	Mostrar "VOLUMEN:"	volumen
+	Mostrar "----------------------------------------"
+	
+	Escribir "¿Desea repétir este proceso? si(1)---no(2)"
+	Leer t
+	//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	si t=1 Entonces
+		area=0
+		volumen=0
+		r=0
+		a=0
+		lado=0
+		
+		Mostrar "===CALCULAR UNA FIGURA GEOMETRICA==="
+		Mostrar "////////////////////////////////////////////////////////////"
+		Mostrar "///                      Cubo (1)                        ///"
+		Mostrar "///                     Esfera (2)                       ///"
+		Mostrar "///                    Cilindro (3)                      ///"
+		Mostrar "////////////////////////////////////////////////////////////"
+		Escribir  "¿Que desea calcular?"
+		Leer rs
+		//----------------------------------------------------------------------
+		Si rs=1 Entonces
+			calculocb
+		FinSi
+		
+		Si rs=2 Entonces
+			calculosfe
+		FinSi
+		
+		Si rs=3 Entonces
+			calculocd
+		FinSi
+	FinSi
+FinSubProceso
+//------------------------------------------------------------------------
+SubProceso calculocd
+	Mostrar "===Calculo de un Cilindro==="
+	Escribir "Ingrese la radio del Cilindro:"
+	Leer r
+	Escribir "Ingrese la altura del Cilindro:"
+	Leer a
+	
+	area= 2*3.1416*r*(r+a)
+	volumen= 3.1416*(r^2)*a
+	
+	Mostrar "----------------------------------------"
+	Mostrar "AREA:" area
+	Mostrar "VOLUMEN:"	volumen
+	Mostrar "----------------------------------------"
+	
+	Escribir "¿Desea repétir este proceso? si(1)---no(2)"
+	Leer t
+	//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	si t=1 Entonces
+		area=0
+		volumen=0
+		r=0
+		a=0
+		lado=0
+		
+		Mostrar "===CALCULAR UNA FIGURA GEOMETRICA==="
+		Mostrar "////////////////////////////////////////////////////////////"
+		Mostrar "///                      Cubo (1)                        ///"
+		Mostrar "///                     Esfera (2)                       ///"
+		Mostrar "///                    Cilindro (3)                      ///"
+		Mostrar "////////////////////////////////////////////////////////////"
+		Escribir  "¿Que desea calcular?"
+		Leer rs
+		//----------------------------------------------------------------------
+		Si rs=1 Entonces
+			calculocb
+		FinSi
+		
+		Si rs=2 Entonces
+			calculosfe
+		FinSi
+		
+		Si rs=3 Entonces
+			calculocd
+		FinSi
+	FinSi
+	
+FinSubProceso
+//------------------------------------------------------------------------
+Algoritmo calculador
+	Mostrar "===CALCULAR UNA FIGURA GEOMETRICA==="
+	Mostrar "////////////////////////////////////////////////////////////"
+	Mostrar "///                      Cubo (1)                        ///"
+	Mostrar "///                     Esfera (2)                       ///"
+	Mostrar "///                    Cilindro (3)                      ///"
+	Mostrar "////////////////////////////////////////////////////////////"
+	Escribir  "¿Que desea calcular?"
+	Leer rs
+	//----------------------------------------------------------------------
+	Si rs=1 Entonces
+		calculocb
+	FinSi
+	
+	Si rs=2 Entonces
+		calculosfe
+	FinSi
+	
+	Si rs=3 Entonces
+		calculocd
+	FinSi
+	
+	
+FinAlgoritmo

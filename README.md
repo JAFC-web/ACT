@@ -1,7 +1,7 @@
 # ACT
 ![image](https://github.com/user-attachments/assets/7aa5bdd1-dc79-4f5c-b835-9ccf24d57966)
 
-Materia: Fundamentos Del Progamación
+Materia: Fundamentos De Progamación
 
 Nombre completo: Jose Alonso Filomeno Crespo
 

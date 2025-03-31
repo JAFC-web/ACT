@@ -1,0 +1,39 @@
+//-------------------------------------------------------------------------------------------------------------
+SubProceso salarioB(horast, tarifa, salarioBr Por Referencia)
+    salarioBr <- horast * tarifa
+    Mostrar "Su salario bruto es de $" salarioBr
+FinSubProceso
+//-------------------------------------------------------------------------------------------------------------
+SubProceso descuento(salarioBr, descuentoq Por Referencia)
+    descuentoq <- salarioBr*0.15
+    Mostrar "Descuento de impuesto (15%):" descuentoq
+FinSubProceso
+//-------------------------------------------------------------------------------------------------------------
+SubProceso descuentos(salarioBr, descs Por Referencia)
+    descs <- salarioBr*0.10
+    Mostrar "Descuento de seguro social (10%)" descs
+FinSubProceso
+//-------------------------------------------------------------------------------------------------------------
+SubAlgoritmo salarion(salarioBr, descuentoq, descs, total Por Referencia, salarione Por Referencia)
+    total <- descuentoq+descs
+    salarione <- salarioBr-total
+    Mostrar "Su Descuento total es de:" total
+    Mostrar "El salrio Neto restante es de:$" salarione
+FinSubAlgoritmo
+//-------------------------------------------------------------------------------------------------------------
+
+Algoritmo elefante
+    Definir tarifa, salarioBr, descuentoq, descs, total, salarione Como Real
+    Definir horast Como Entero
+    
+    Escribir "Ingrese las horas trabajadas:"
+    Leer horast
+    Escribir "Ingrese la tarifa por hora:"
+    Leer tarifa
+    
+    salarioB(horast, tarifa, salarioBr)
+    descuento(salarioBr, descuentoq)
+    descuentos(salarioBr, descs)
+    salarion(salarioBr, descuentoq, descs, total, salarione)
+    
+FinAlgoritmo
